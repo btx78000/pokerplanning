@@ -1,0 +1,146 @@
+╔══════════════════════════════════════════════════════════════╗
+║              ⚠️  INSTRUCTIONS URGENTES - ERREUR CORS         ║
+╚══════════════════════════════════════════════════════════════╝
+
+Le problème CORS que vous rencontrez nécessite un REDÉMARRAGE COMPLET
+des serveurs pour prendre en compte les corrections.
+
+═══════════════════════════════════════════════════════════════
+
+🔴 ÉTAPE 1: ARRÊT COMPLET
+═══════════════════════════════════════════════════════════════
+
+Double-cliquez sur le fichier:
+
+    ►  clean-restart.bat  ◄
+
+Ce fichier va:
+✓ Tuer TOUS les processus Node.js
+✓ Nettoyer les ports 3001 et 5173
+✓ Redémarrer le backend avec les nouvelles config CORS
+✓ Redémarrer le frontend avec les nouvelles config Socket.io
+
+⏱️  ATTENDEZ 10 SECONDES après le lancement!
+
+
+═══════════════════════════════════════════════════════════════
+
+🟢 ÉTAPE 2: VÉRIFICATION NAVIGATEUR
+═══════════════════════════════════════════════════════════════
+
+1. Ouvrez votre navigateur
+
+2. Allez sur:  http://localhost:5173
+
+3. Appuyez sur:  Ctrl + Shift + R
+   (Hard refresh pour vider le cache)
+
+4. Ouvrez la Console (F12)
+
+5. Vous devriez voir:
+   ✅ Connected to server
+   [vite] connected.
+
+6. Le point de statut devrait être VERT
+
+
+═══════════════════════════════════════════════════════════════
+
+✅ SI ÇA MARCHE
+═══════════════════════════════════════════════════════════════
+
+Parfait! Vous pouvez maintenant:
+• Créer une room
+• Inviter des participants
+• Voter
+• Profiter de l'app! 🎉
+
+
+═══════════════════════════════════════════════════════════════
+
+❌ SI ÇA NE MARCHE TOUJOURS PAS
+═══════════════════════════════════════════════════════════════
+
+1. Vérifiez que les DEUX fenêtres sont ouvertes:
+   ☐ "Planning Poker - Backend"
+   ☐ "Planning Poker - Frontend"
+
+2. Dans la fenêtre Backend, vous devriez voir:
+   🚀 Server running on http://localhost:3001
+
+3. Dans la fenêtre Frontend, vous devriez voir:
+   ➜  Local:   http://localhost:5173/
+
+4. Si une des fenêtres affiche une ERREUR:
+
+   Double-cliquez sur:  diagnostic.bat
+
+   Et envoyez-moi les résultats
+
+
+═══════════════════════════════════════════════════════════════
+
+📋 DIAGNOSTIC RAPIDE
+═══════════════════════════════════════════════════════════════
+
+Pour identifier le problème, lancez:
+
+    ►  diagnostic.bat  ◄
+
+Ce fichier va vérifier:
+☐ Node.js installé
+☐ Dependencies installées
+☐ Processus Node.js en cours
+☐ Ports 3001 et 5173
+☐ Connexion au backend
+
+
+═══════════════════════════════════════════════════════════════
+
+🔧 AUTRES COMMANDES UTILES
+═══════════════════════════════════════════════════════════════
+
+stop.bat          → Arrête tous les serveurs
+restart.bat       → Redémarrage simple
+clean-restart.bat → Redémarrage complet (RECOMMANDÉ)
+diagnostic.bat    → Vérification système
+
+
+═══════════════════════════════════════════════════════════════
+
+🆘 DÉPANNAGE AVANCÉ
+═══════════════════════════════════════════════════════════════
+
+Consultez le fichier:  TROUBLESHOOTING.md
+
+Il contient toutes les solutions détaillées pour chaque problème.
+
+
+═══════════════════════════════════════════════════════════════
+
+🔑 POINTS CLÉS
+═══════════════════════════════════════════════════════════════
+
+1. Toujours utiliser clean-restart.bat pour redémarrer
+2. Attendre 10 secondes avant de tester
+3. Faire Ctrl + Shift + R dans le navigateur
+4. Vérifier la console (F12) pour les messages
+5. Point vert = connecté, point rouge = problème
+
+
+═══════════════════════════════════════════════════════════════
+
+📞 EN CAS DE BLOCAGE
+═══════════════════════════════════════════════════════════════
+
+1. Lancez diagnostic.bat
+2. Prenez une capture d'écran de la console (F12)
+3. Notez les messages d'erreur exacts
+4. Contactez-moi avec ces informations
+
+
+═══════════════════════════════════════════════════════════════
+
+            RÉSUMÉ: LANCEZ clean-restart.bat MAINTENANT!
+
+═══════════════════════════════════════════════════════════════

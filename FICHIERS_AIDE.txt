@@ -1,0 +1,189 @@
+╔══════════════════════════════════════════════════════════════╗
+║           📁 GUIDE DES FICHIERS D'AIDE DISPONIBLES          ║
+╚══════════════════════════════════════════════════════════════╝
+
+Tous ces fichiers sont là pour vous aider! Voici leur utilité:
+
+
+🚀 LANCEMENT & CONTRÔLE
+═══════════════════════════════════════════════════════════════
+
+📄 install.bat
+   └─ Installe toutes les dépendances
+   └─ À lancer UNE SEULE FOIS au début
+   └─ Durée: 2-5 minutes
+
+📄 start.bat
+   └─ Démarre l'application (backend + frontend)
+   └─ Ouvre deux fenêtres de commande
+   └─ Utilisation normale quotidienne
+
+📄 stop.bat
+   └─ Arrête tous les serveurs Node.js
+   └─ Ferme proprement l'application
+
+📄 restart.bat
+   └─ Redémarre l'application
+   └─ Équivalent à: stop.bat puis start.bat
+
+📄 clean-restart.bat  ⭐ RECOMMANDÉ
+   └─ Redémarrage complet avec nettoyage
+   └─ Tue TOUS les processus Node.js
+   └─ Nettoie les ports
+   └─ Redémarre avec config fraîche
+   └─ À utiliser en cas de problème CORS
+
+
+🔧 DIAGNOSTIC & DÉPANNAGE
+═══════════════════════════════════════════════════════════════
+
+📄 diagnostic.bat
+   └─ Vérifie l'état de l'installation
+   └─ Teste Node.js, npm, dependencies
+   └─ Vérifie les ports et processus
+   └─ Affiche un rapport complet
+
+📄 TROUBLESHOOTING.md
+   └─ Guide complet de dépannage
+   └─ Solutions pour chaque problème
+   └─ Commandes de diagnostic détaillées
+   └─ FAQ et astuces
+
+📄 INSTRUCTIONS_URGENTES.txt
+   └─ Instructions rapides pour erreur CORS
+   └─ Étapes précises à suivre
+   └─ Vérifications essentielles
+
+📄 FIXES_APPLIED.md
+   └─ Documentation des corrections appliquées
+   └─ Explications techniques des problèmes
+   └─ Détails des modifications
+
+
+📚 DOCUMENTATION
+═══════════════════════════════════════════════════════════════
+
+📄 README.md
+   └─ Documentation principale du projet
+   └─ Guide d'installation complet
+   └─ Fonctionnalités de l'application
+   └─ Stack technique
+
+📄 LANCEMENT_RAPIDE.txt
+   └─ Guide visuel étape par étape
+   └─ Première utilisation
+   └─ Conseils et astuces
+
+📄 CLAUDE.md
+   └─ Documentation technique pour développeurs
+   └─ Architecture de l'application
+   └─ Commandes de développement
+   └─ Patterns de code
+
+📄 FICHIERS_AIDE.txt (ce fichier)
+   └─ Liste et explication de tous les fichiers
+
+
+⚙️ CONFIGURATION
+═══════════════════════════════════════════════════════════════
+
+📄 .gitignore
+   └─ Fichiers à ignorer par Git
+   └─ Évite de commiter node_modules, etc.
+
+📄 package.json (root)
+   └─ Scripts pour lancer l'app
+   └─ Commandes npm disponibles
+
+📄 server/package.json
+   └─ Dependencies du backend
+   └─ Scripts serveur
+
+📄 client/package.json
+   └─ Dependencies du frontend
+   └─ Scripts client
+
+
+═══════════════════════════════════════════════════════════════
+
+🎯 UTILISATION TYPIQUE
+═══════════════════════════════════════════════════════════════
+
+PREMIÈRE INSTALLATION:
+1. install.bat          (une seule fois)
+2. start.bat            (à chaque utilisation)
+
+UTILISATION QUOTIDIENNE:
+1. start.bat            (démarre l'app)
+2. [utiliser l'app]
+3. stop.bat             (arrête l'app)
+
+EN CAS DE PROBLÈME:
+1. clean-restart.bat    (redémarrage complet)
+2. diagnostic.bat       (si problème persiste)
+3. TROUBLESHOOTING.md   (guide détaillé)
+
+
+═══════════════════════════════════════════════════════════════
+
+📋 ORDRE DE LECTURE RECOMMANDÉ
+═══════════════════════════════════════════════════════════════
+
+Si c'est votre première fois:
+
+1️⃣  LANCEMENT_RAPIDE.txt
+    └─ Démarrage rapide et simple
+
+2️⃣  README.md
+    └─ Comprendre l'application
+
+3️⃣  En cas de problème → INSTRUCTIONS_URGENTES.txt
+
+4️⃣  Problème persistant → TROUBLESHOOTING.md
+
+5️⃣  Pour développer → CLAUDE.md
+
+
+═══════════════════════════════════════════════════════════════
+
+⭐ FICHIERS LES PLUS IMPORTANTS
+═══════════════════════════════════════════════════════════════
+
+Pour utilisateurs:
+• clean-restart.bat           (redémarrage fiable)
+• INSTRUCTIONS_URGENTES.txt   (aide CORS)
+• TROUBLESHOOTING.md          (solutions problèmes)
+
+Pour développeurs:
+• CLAUDE.md                   (doc technique)
+• README.md                   (overview projet)
+
+
+═══════════════════════════════════════════════════════════════
+
+🔗 LIENS RAPIDES
+═══════════════════════════════════════════════════════════════
+
+Frontend:  http://localhost:5173
+Backend:   http://localhost:3001
+
+Console navigateur:  F12
+
+
+═══════════════════════════════════════════════════════════════
+
+💡 CONSEILS
+═══════════════════════════════════════════════════════════════
+
+• Gardez les fenêtres de serveur ouvertes
+• Ne modifiez pas les fichiers .bat sauf si vous savez ce que
+  vous faites
+• En cas de doute, lancez diagnostic.bat
+• Utilisez clean-restart.bat plutôt que restart.bat
+
+
+═══════════════════════════════════════════════════════════════
+
+                    Bon développement! 🎴✨
+
+═══════════════════════════════════════════════════════════════

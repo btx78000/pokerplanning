@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900;
+    @apply min-h-screen;
+    @apply text-white;
+    @apply overflow-x-hidden;
+  }
+
+  input, button, select, textarea {
+    -webkit-user-select: text;
+    user-select: text;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+    @apply shadow-xl shadow-purple-500/20;
+  }
+
+  .glass-hover {
+    @apply glass transition-all duration-300;
+    @apply hover:bg-white/15 hover:shadow-2xl hover:shadow-purple-500/30;
+    @apply hover:scale-105 hover:border-white/30;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400;
+    @apply bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-purple-600 to-pink-600;
+    @apply hover:from-purple-500 hover:to-pink-500;
+    @apply text-white font-semibold py-3 px-6 rounded-2xl;
+    @apply transition-all duration-300;
+    @apply shadow-lg shadow-purple-500/50;
+    @apply hover:shadow-xl hover:shadow-pink-500/50;
+    @apply hover:scale-105;
+    @apply active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply glass-hover;
+    @apply text-white font-semibold py-3 px-6 rounded-2xl;
+  }
+
+  .card {
+    @apply glass rounded-3xl p-6;
+  }
+
+  .input-glass {
+    @apply glass rounded-xl px-4 py-3;
+    @apply text-white placeholder-white/50;
+    @apply outline-none focus:ring-2 focus:ring-purple-500/50;
+    @apply transition-all duration-300;
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+  }
+
+  .input-glass:focus {
+    @apply ring-2 ring-purple-500;
+  }
+}
+
+/* Custom animations */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 100%
+  );
+  background-size: 1000px 100%;
+}
+
+/* Floating reaction animation */
+@keyframes float-up {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.float-up {
+  animation: float-up 2s ease-out forwards;
+}

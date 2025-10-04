@@ -1,0 +1,100 @@
+╔══════════════════════════════════════════════════════════════╗
+║          PLANNING POKER - GUIDE DE LANCEMENT RAPIDE          ║
+╚══════════════════════════════════════════════════════════════╝
+
+🎴 PREMIÈRE UTILISATION
+═══════════════════════════════════════════════════════════════
+
+1. Double-cliquez sur : install.bat
+   → Installe toutes les dépendances nécessaires
+   → Durée : 2-5 minutes selon votre connexion
+
+2. Attendez que l'installation se termine
+   → Un message "Installation Complete!" apparaîtra
+
+
+🚀 LANCER L'APPLICATION
+═══════════════════════════════════════════════════════════════
+
+Double-cliquez sur : start.bat
+
+→ Deux fenêtres s'ouvriront automatiquement :
+  • Une pour le serveur backend (port 3001)
+  • Une pour le client frontend (port 5173)
+
+→ Ouvrez votre navigateur et allez sur :
+  http://localhost:5173
+
+
+⏹️ ARRÊTER L'APPLICATION
+═══════════════════════════════════════════════════════════════
+
+Double-cliquez sur : stop.bat
+
+→ Arrête tous les serveurs Node.js en cours d'exécution
+
+
+🔄 REDÉMARRER L'APPLICATION
+═══════════════════════════════════════════════════════════════
+
+Double-cliquez sur : restart.bat
+
+→ Arrête puis relance automatiquement les serveurs
+→ Utile après une mise à jour du code
+→ N'oubliez pas de faire Ctrl + Shift + R dans le navigateur!
+
+
+💡 CONSEILS
+═══════════════════════════════════════════════════════════════
+
+• Ne fermez PAS les fenêtres noires (serveurs) manuellement
+  Utilisez stop.bat pour un arrêt propre
+
+• Si les serveurs ne démarrent pas, vérifiez que les ports
+  3001 et 5173 ne sont pas déjà utilisés
+
+• En cas de problème, relancez install.bat
+
+
+📝 FICHIERS DISPONIBLES
+═══════════════════════════════════════════════════════════════
+
+install.bat  → Installer les dépendances (une seule fois)
+start.bat    → Lancer l'application
+stop.bat     → Arrêter tous les serveurs
+restart.bat  → Redémarrer l'application (stop + start)
+
+
+🎯 UTILISATION DE L'APP
+═══════════════════════════════════════════════════════════════
+
+1. Créez une room ou rejoignez-en une avec un code
+2. Partagez le lien avec votre équipe
+3. Votez avec les cartes Fibonacci
+4. Cliquez sur "Reveal Votes" pour voir les résultats
+5. Profitez des confettis si consensus ! 🎉
+
+
+❓ PROBLÈMES FRÉQUENTS
+═══════════════════════════════════════════════════════════════
+
+Q: "Failed to install dependencies"
+A: Vérifiez votre connexion Internet et réessayez
+
+Q: "Port already in use"
+A: Un autre programme utilise le port. Lancez stop.bat d'abord
+
+Q: La page ne charge pas
+A: Attendez 5-10 secondes après le lancement de start.bat
+
+
+🌐 URLS
+═══════════════════════════════════════════════════════════════
+
+Frontend : http://localhost:5173
+Backend  : http://localhost:3001
+
+
+═══════════════════════════════════════════════════════════════
+            Développé avec ❤️ pour les équipes agiles
+═══════════════════════════════════════════════════════════════
