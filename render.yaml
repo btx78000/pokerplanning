@@ -16,8 +16,9 @@ services:
         sync: false
 
   # Frontend Static Site
-  - type: static
+  - type: web
     name: poker-planning-frontend
+    env: static
     buildCommand: cd client && npm install && npm run build
     staticPublishPath: ./client/dist
     routes:
