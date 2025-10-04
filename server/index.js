@@ -162,15 +162,25 @@ io.on('connection', (socket) => {
     // Find and remove participant from all rooms
     for (const [roomId, room] of roomManager.rooms.entries()) {
       if (room.participants.has(socket.id)) {
+        const wasRevealed = room.revealed;
         roomManager.removeParticipant(roomId, socket.id);
 
         const participants = roomManager.getParticipants(roomId);
         const voteStatus = voteManager.getVoteStatus(room);
+        const votes = voteManager.getVotes(room);
+
+        // If votes were revealed, recalculate results
+        let results = null;
+        if (wasRevealed && room.votes.size > 0) {
+          results = voteManager.revealVotes(room);
+        }
 
         // Notify remaining participants
         io.to(roomId).emit('participant-left', {
           participants,
           voteStatus,
+          votes,
+          results,
         });
 
         console.log(`Participant left room ${roomId}`);

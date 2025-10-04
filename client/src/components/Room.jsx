@@ -55,6 +55,28 @@ function Room({ socket, connected }) {
     socket.on('participant-left', (data) => {
       setParticipants(data.participants);
       setVoteStatus(data.voteStatus);
+
+      // Update voted participants - remove those who left
+      if (data.participants) {
+        const activeParticipantIds = new Set(data.participants.map(p => p.id));
+        setVotedParticipants(prev => {
+          const updated = new Set();
+          prev.forEach(id => {
+            if (activeParticipantIds.has(id)) {
+              updated.add(id);
+            }
+          });
+          return updated;
+        });
+      }
+
+      // Update votes and results if revealed
+      if (data.votes) {
+        setVotes(data.votes);
+      }
+      if (data.results) {
+        setResults(data.results);
+      }
     });
 
     socket.on('vote-submitted', (data) => {
